@@ -1,0 +1,27 @@
+#端口和上下文
+server:
+  port: 8000
+
+#通用配置
+spring:
+  #sring配置
+  config:
+    import:
+      - nacos:service-order-dev.yaml
+  profiles:
+    include: feign
+  #服务名
+  application:
+    name: service-order
+  #cloud 配置
+  cloud:
+    #nacos配置
+    nacos:
+      server-addr: 127.0.0.1:8848
+
+
+
+
+
+
+

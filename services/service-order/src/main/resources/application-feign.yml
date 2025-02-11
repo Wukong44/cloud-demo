@@ -1,0 +1,19 @@
+
+
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            connectTimeout: 5000
+            readTimeout: 5000
+          service-product:
+            connectTimeout: 2000
+            readTimeout: 2000
+
+#日志配置
+logging:
+  level:
+    com.xsy.order.feign: debug
+
